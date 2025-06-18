@@ -21,7 +21,7 @@
             <a href="#lots">посмотреть лоты</a>
           </li>
           <li class="header__menu-bullet header__menu-underline">
-            <a class="header__menu-padding" href="#about">об аукционе</a>
+            <a href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -33,28 +33,28 @@
         />
       </a>
       <address class="header__address address">
-        <a class="address-tel" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
         <br />
-        <a class="address-mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <br />
-        <span class="header__address-text"
-          >наб. Принсенграхт 263- 265, Амстердам</span
-        >
+        <p class="address-text">наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
     <main>
       <!-- section cover -->
       <section class="cover">
         <h1 class="main-header">
-          <span class="main_header-1">Оно</span>
-          <span class="main_header-2">тебе</span>
-          <span class="main_header-3">надо</span>
+          <span class="aligned-text">Оно</span>
+          <span class="aligned-text_center">тебе</span>
+          <span class="aligned-text_right">надо</span>
         </h1>
         <div class="discription">
           <p class="discription__text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="discription__button">Сделать ставку</button>
+          <button type="button" class="discription__button">
+            Сделать ставку
+          </button>
         </div>
       </section>
       <!-- section lots -->
@@ -66,10 +66,10 @@
               <h3 class="card__title">
                 Фильм режиссёра, который бросил киношколу
               </h3>
-              <article class="lots__article">
+              <p class="lots__article">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </article>
+              </p>
             </a>
           </li>
           <li class="lots__item card_type card_type_book">
@@ -77,14 +77,14 @@
               <h3 class="card__title">
                 Книга, где описан один скучный день из жизни рекламного агента
               </h3>
-              <article class="lots__article">
+              <p class="lots__article">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
                 переходами на древнеанглийский. В ней одновременно
                 рассказывается о 16 июня 1904 года и об истории литературы,
                 начиная с античных времён. И это всё накладывается на эпическую
                 поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
                 Джойса?
-              </article>
+              </p>
             </a>
           </li>
           <li class="lots__item card_type card_type_picture">
@@ -92,12 +92,12 @@
               <h3 class="card__title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </h3>
-              <article class="lots__article">
+              <p class="lots__article">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе
                 что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                 котиков... Сколько бы вы на такое поставили, если бы не знали,
                 что это — одна из революционных работ Кандинского?
-              </article>
+              </p>
             </a>
           </li>
         </ul>
@@ -116,34 +116,37 @@
         </div>
         <div class="about__right">
           <h2 class="about__title" id="about">Об аукционе</h2>
-          <span class="about__text about__text-padding"
-            >Здесь вы не встретите очередное пафосное собрание невероятно
-            дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
-            один аукцион. Потому что кому нужен дневник девочки-подростка или
-            картина, которую может нарисовать даже ребёнок? Кому нужны все эти
-            странные вещи, созданные любителями?
-          </span>
-          <span class="about__text">
-            Слишком сложные или, наоборот, слишком простые. Опережающие своё
-            время. В пух и прах растерзанные критиками. Непринятые и непонятые.
-            Когда-то они казались просто неудачными. Но, несмотря на критику,
-            кажущуюся простоту или сложность, сейчас без этих лотов невозможно
-            представить современную культуру. Когда в эти вещи не верил никто,
-            продолжали верить их создатели. И сейчас эти лоты стали культовыми.
-          </span>
+          <div class="about__text">
+            <p>
+              Здесь вы не встретите очередное пафосное собрание невероятно
+              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
+              на один аукцион. Потому что кому нужен дневник девочки-подростка
+              или картина, которую может нарисовать даже ребёнок? Кому нужны все
+              эти странные вещи, созданные любителями?
+            </p>
+            <p>
+              Слишком сложные или, наоборот, слишком простые. Опережающие своё
+              время. В пух и прах растерзанные критиками. Непринятые и
+              непонятые. Когда-то они казались просто неудачными. Но, несмотря
+              на критику, кажущуюся простоту или сложность, сейчас без этих
+              лотов невозможно представить современную культуру. Когда в эти
+              вещи не верил никто, продолжали верить их создатели. И сейчас эти
+              лоты стали культовыми.
+            </p>
+          </div>
         </div>
       </section>
     </main>
     <!-- footer -->
     <footer class="footer">
       <address class="footer__address address">
-        <a class="address-tel" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
         <br />
-        <a class="address-mail" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <br />
-        <span class="footer__address-text"
-          >наб. Принсенграхт 263- 265, Амстердам</span
-        >
+        <p class="address-text footer__address-text">
+          наб. Принсенграхт 263- 265, Амстердам
+        </p>
       </address>
       <div class="footer__right">
         <nav class="footer__menu">
