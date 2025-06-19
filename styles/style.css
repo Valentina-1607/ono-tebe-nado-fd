@@ -82,14 +82,17 @@
   display: block;
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 28px;
 }
 
 .aligned-text_right {
   display: block;
   text-align: right;
-  padding-top: 20px;
-  padding-left: 613px;
+}
+
+.reset-letter-spacing {
+  letter-spacing: 0;
 }
 
 .discription {
@@ -155,30 +158,24 @@
 .card_type {
   position: relative;
   z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .card_type_film {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-01.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 .card_type_book {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-02.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 .card_type_picture {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-03.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 .card__title {
@@ -253,25 +250,16 @@
   line-height: 120%;
 }
 
-/* .about__text-padding {
-  display: inline-block;
-  margin-bottom: 24px;
-} */
-
 /* <!-- footer --> */
 .footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin: 0 50px 82px 50px;
+  word-spacing: -0.6px;
 }
 
 .footer__address {
   padding-top: 1px;
-}
-
-.footer__address-text {
-  width: 265px;
-  word-spacing: -0.6px;
 }
 
 .footer__right {
